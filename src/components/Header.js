@@ -3,9 +3,7 @@ import React from "react";
 function Header() {
   return (
     <header>
-      <div>
-        <h1> Matahari's Weather App </h1>
-      </div>
+      <div></div>
       <nav>
         <a href="/?city=Jakarta"> Jakarta </a>
         <a href="/?city=New%20York"> New York </a>
