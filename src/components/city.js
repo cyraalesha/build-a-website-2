@@ -1,5 +1,6 @@
 import React from "react";
 
+// props -> cityName ,temp, color
 function City({ cityName, temp, color }) {
   return (
     <div className={"flex flex-row p-8 justify-between items-center " + color}>

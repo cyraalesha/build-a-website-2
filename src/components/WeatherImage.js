@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 // import {  FontAwesomeIcon  } from '@fortawesome/react-fontawesome';
 
 /* 
@@ -8,7 +8,7 @@ import {
 */
 
 function WeatherImage({ weatherType }) {
-  // //switch (weatherType) {
+  // switch (weatherType) {
   //   case "TODO":
   //     return <FontAwesomeIcon icon={TODO} />;
 
@@ -21,7 +21,7 @@ function WeatherImage({ weatherType }) {
   //   default:
   //     return <FontAwesomeIcon icon={TODO} />;
   // }
-  return null
+  return null;
 }
 
 export default WeatherImage;
