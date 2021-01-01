@@ -3,6 +3,8 @@ import { useHistory } from "react-router-dom";
 import axios from "axios";
 import WeatherImage from "../components/WeatherImage";
 import "../App.css";
+import Music from "../components/Music";
+import BackgroundMagic from "../components/Background";
 
 // TODO
 // - implement API
@@ -43,6 +45,7 @@ function Details() {
   const {
     cloudiness,
     currentTemp,
+    tempOnly,
     highTemp,
     humidity,
     lowTemp,
@@ -51,6 +54,7 @@ function Details() {
   } = useMemo(() => {
     let cloudiness = "";
     let currentTemp = "";
+    let tempOnly = "";
     let highTemp = "";
     let humidity = "";
     let lowTemp = "";
@@ -60,6 +64,7 @@ function Details() {
     if (weatherData) {
       cloudiness = `${weatherData.clouds.all}%`;
       currentTemp = `${Math.round(weatherData.main.temp)}°C`;
+      tempOnly = `${Math.round(weatherData.main.temp)}`;
       highTemp = `${Math.round(weatherData.main.temp_max)}°C`;
       humidity = `${weatherData.main.humidity}%`;
       lowTemp = `${Math.round(weatherData.main.temp_min)}°C`;
@@ -70,6 +75,7 @@ function Details() {
     return {
       cloudiness,
       currentTemp,
+      tempOnly,
       highTemp,
       humidity,
       lowTemp,
@@ -80,10 +86,17 @@ function Details() {
 
   return (
     // Container
-    <div className="flex flex-col items-center h-screen bg-green-200">
-      <div className="p-8 text-2xl font-bold">Weather in {city}</div>
+    <div
+      className={
+        "flex flex-col items-center h-screen " +
+        <BackgroundMagic temp={tempOnly} />
+      }
+    >
+      <div className="p-8 text-2xl font-bold bg-color-gray-900 text-white">
+        Weather in {city}
+      </div>
 
-      <div className="flex flex-col p-8 m-4 border-2 rounded-md border-gray-700 items-center">
+      <div className="flex flex-col p-8 m-4 border-2 rounded-md items-center">
         <WeatherImage weatherType={weatherType} className="text-xl" />
         <div>{weatherType}</div>
         <div>Current Temperature : {currentTemp}</div>
@@ -94,6 +107,9 @@ function Details() {
       <div>Low Temperature : {lowTemp}</div>
       <div>Humidity : {humidity}</div>
       <div>Wind Speed : {windSpeed}</div>
+      <div className="float">
+        <Music temp={tempOnly}></Music>
+      </div>
     </div>
   );
 }
