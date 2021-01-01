@@ -122,7 +122,7 @@ function Details() {
       <div>Low Temperature : {lowTemp}</div>
       <div>Humidity : {humidity}</div>
       <div>Wind Speed : {windSpeed}</div>
-      <div className="float">
+      <div className="absolute right-0 bottom-0">
         <Music temp={tempOnly}></Music>
       </div>
     </div>
