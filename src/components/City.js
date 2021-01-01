@@ -13,7 +13,7 @@ function City({ cityName, temp, color }) {
   return (
     <button
       className={
-        "box-content p-20 m-20 h-200 rounded-xl justify-between items-center " +
+        "box-content p-20 m-20 h-200 rounded-xl justify-between items-center  animate-bounce " +
         color +
         " bg-cover"
       }

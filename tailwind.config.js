@@ -11,5 +11,9 @@ module.exports = {
   },
   variants: {
     backgroundColor: ["hover"],
+    animation: ["responsive", "motion-safe", "motion-reduce"],
+    extend{
+        padding: ['hover'],
+    }
   },
 };
