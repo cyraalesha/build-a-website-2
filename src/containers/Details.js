@@ -84,11 +84,27 @@ function Details() {
     };
   }, [weatherData]);
 
+  const { backgroundText } = useMemo(() => {
+    let backgroundText = "";
+
+    if (tempOnly < 10) {
+      backgroundText = "bg-gradient-to-r from-green-400 to-blue-500";
+    } else if (tempOnly < 20) {
+      backgroundText =
+        "bg-gradient-to-r from-purple-400 via-pink-500 to-red-500";
+    } else if (tempOnly > 20) {
+      backgroundText = "from-blue-600 to-purple-500 bg-gradient-to-r";
+    }
+
+    return backgroundText;
+  });
+
   return (
     // Container
     <div
       className={
-        "flex flex-col items-center h-screen bg-gradient-to-r from-green-400 to-blue-500"
+        "flex flex-col items-center h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 " +
+        { backgroundText }
       }
     >
       <div className="p-8 text-2xl font-bold bg-color-gray-900 text-white">
