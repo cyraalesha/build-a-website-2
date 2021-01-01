@@ -88,8 +88,7 @@ function Details() {
     // Container
     <div
       className={
-        "flex flex-col items-center h-screen " +
-        <BackgroundMagic temp={tempOnly} />
+        "flex flex-col items-center h-screen bg-gradient-to-r from-green-400 to-blue-500"
       }
     >
       <div className="p-8 text-2xl font-bold bg-color-gray-900 text-white">
