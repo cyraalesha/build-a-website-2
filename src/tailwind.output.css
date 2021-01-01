@@ -22200,6 +22200,50 @@ video {
   animation: bounce 1s infinite;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .motion-safe\:animate-none {
+    animation: none;
+  }
+
+  .motion-safe\:animate-spin {
+    animation: spin 1s linear infinite;
+  }
+
+  .motion-safe\:animate-ping {
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .motion-safe\:animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .motion-safe\:animate-bounce {
+    animation: bounce 1s infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-reduce\:animate-none {
+    animation: none;
+  }
+
+  .motion-reduce\:animate-spin {
+    animation: spin 1s linear infinite;
+  }
+
+  .motion-reduce\:animate-ping {
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .motion-reduce\:animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .motion-reduce\:animate-bounce {
+    animation: bounce 1s infinite;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -42658,6 +42702,50 @@ video {
 
   .sm\:animate-bounce {
     animation: bounce 1s infinite;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .sm\:motion-safe\:animate-none {
+      animation: none;
+    }
+
+    .sm\:motion-safe\:animate-spin {
+      animation: spin 1s linear infinite;
+    }
+
+    .sm\:motion-safe\:animate-ping {
+      animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    .sm\:motion-safe\:animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .sm\:motion-safe\:animate-bounce {
+      animation: bounce 1s infinite;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .sm\:motion-reduce\:animate-none {
+      animation: none;
+    }
+
+    .sm\:motion-reduce\:animate-spin {
+      animation: spin 1s linear infinite;
+    }
+
+    .sm\:motion-reduce\:animate-ping {
+      animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    .sm\:motion-reduce\:animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .sm\:motion-reduce\:animate-bounce {
+      animation: bounce 1s infinite;
+    }
   }
 }
 
@@ -63120,6 +63208,50 @@ video {
   .md\:animate-bounce {
     animation: bounce 1s infinite;
   }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .md\:motion-safe\:animate-none {
+      animation: none;
+    }
+
+    .md\:motion-safe\:animate-spin {
+      animation: spin 1s linear infinite;
+    }
+
+    .md\:motion-safe\:animate-ping {
+      animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    .md\:motion-safe\:animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .md\:motion-safe\:animate-bounce {
+      animation: bounce 1s infinite;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .md\:motion-reduce\:animate-none {
+      animation: none;
+    }
+
+    .md\:motion-reduce\:animate-spin {
+      animation: spin 1s linear infinite;
+    }
+
+    .md\:motion-reduce\:animate-ping {
+      animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    .md\:motion-reduce\:animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .md\:motion-reduce\:animate-bounce {
+      animation: bounce 1s infinite;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -83581,6 +83713,50 @@ video {
   .lg\:animate-bounce {
     animation: bounce 1s infinite;
   }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .lg\:motion-safe\:animate-none {
+      animation: none;
+    }
+
+    .lg\:motion-safe\:animate-spin {
+      animation: spin 1s linear infinite;
+    }
+
+    .lg\:motion-safe\:animate-ping {
+      animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    .lg\:motion-safe\:animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .lg\:motion-safe\:animate-bounce {
+      animation: bounce 1s infinite;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .lg\:motion-reduce\:animate-none {
+      animation: none;
+    }
+
+    .lg\:motion-reduce\:animate-spin {
+      animation: spin 1s linear infinite;
+    }
+
+    .lg\:motion-reduce\:animate-ping {
+      animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    .lg\:motion-reduce\:animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .lg\:motion-reduce\:animate-bounce {
+      animation: bounce 1s infinite;
+    }
+  }
 }
 
 @media (min-width: 1280px) {
@@ -104041,5 +104217,49 @@ video {
 
   .xl\:animate-bounce {
     animation: bounce 1s infinite;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .xl\:motion-safe\:animate-none {
+      animation: none;
+    }
+
+    .xl\:motion-safe\:animate-spin {
+      animation: spin 1s linear infinite;
+    }
+
+    .xl\:motion-safe\:animate-ping {
+      animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    .xl\:motion-safe\:animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .xl\:motion-safe\:animate-bounce {
+      animation: bounce 1s infinite;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .xl\:motion-reduce\:animate-none {
+      animation: none;
+    }
+
+    .xl\:motion-reduce\:animate-spin {
+      animation: spin 1s linear infinite;
+    }
+
+    .xl\:motion-reduce\:animate-ping {
+      animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    .xl\:motion-reduce\:animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .xl\:motion-reduce\:animate-bounce {
+      animation: bounce 1s infinite;
+    }
   }
 }
